@@ -21,6 +21,7 @@ class CalcInput extends Component {
           ) )
         }
         <button onClick={this.props.onEq}>=</button>
+        <button onClick={this.props.onClear}>C</button>
       </div>
     );
   }

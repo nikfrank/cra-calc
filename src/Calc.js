@@ -16,17 +16,25 @@ class Calc extends Component {
     };
   }
 
-  onNumber = (number)=>{
+  onNumber = (number) => {
     this.setState({ displayValue: this.state.displayValue *10 + number });
   }
 
-  onFunc = (func)=>{
+  onFunc = (func) => {
     this.setState({ func, storedValue: this.state.displayValue, displayValue: 0 });
   }
 
+  onClear = () => {
+    this.setState({
+      storedValue: 0,
+      displayValue: 0,
+      func: '+',
+    });
+  }
+  
   onEq = ()=>{
     const { func, displayValue, storedValue } = this.state;
-    this.setState({ storedValue:0, displayValue: eval(`${displayValue}${func}${storedValue}`), func:'+' });
+    this.setState({ storedValue:0, displayValue: eval(`${storedValue}${func}${displayValue}`), func:'+' });
   }
   
   render() {
@@ -37,8 +45,13 @@ class Calc extends Component {
           <h2>Welcome to React</h2>
         </div>
         <div className="calc">
-          <CalcDisplay value={this.state.displayValue} stored={this.state.storedValue} func={this.state.func}/>
-          <CalcInput onNumber={this.onNumber} onFunc={this.onFunc} onEq={this.onEq} />
+          <CalcDisplay value={this.state.displayValue}
+                       stored={this.state.storedValue}
+                       func={this.state.func}/>
+          <CalcInput onNumber={this.onNumber}
+                     onFunc={this.onFunc}
+                     onClear={this.onClear}
+                     onEq={this.onEq} />
         </div>
       </div>
     );

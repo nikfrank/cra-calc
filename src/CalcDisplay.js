@@ -5,6 +5,7 @@ class CalcDisplay extends Component {
     return (
       <div className="calc-display">
         <p>{this.props.stored}</p>
+        <p>{this.props.func}</p>
         <p>{this.props.value}</p>
       </div>
     );
