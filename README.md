@@ -5,4 +5,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This is a demo Calculator
 
-I have to write some tests!
+I have to write some more tests!
+
+My coverage isn't up to snuff...
