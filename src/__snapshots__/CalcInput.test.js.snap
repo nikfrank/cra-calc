@@ -2,69 +2,86 @@ exports[`test should render the input buttons 1`] = `
 <div
   className="calc-input">
   <button
+    className="calc-input-number"
     onClick={[Function]}>
     1
   </button>
   <button
+    className="calc-input-number"
     onClick={[Function]}>
     2
   </button>
   <button
+    className="calc-input-number"
     onClick={[Function]}>
     3
   </button>
   <button
+    className="calc-input-number"
     onClick={[Function]}>
     4
   </button>
   <button
+    className="calc-input-number"
     onClick={[Function]}>
     5
   </button>
   <button
+    className="calc-input-number"
     onClick={[Function]}>
     6
   </button>
   <button
+    className="calc-input-number"
     onClick={[Function]}>
     7
   </button>
   <button
+    className="calc-input-number"
     onClick={[Function]}>
     8
   </button>
   <button
+    className="calc-input-number"
     onClick={[Function]}>
     9
   </button>
   <button
+    className="calc-input-number"
     onClick={[Function]}>
     0
   </button>
   <button
+    className="calc-input-func"
     onClick={[Function]}>
     +
   </button>
   <button
+    className="calc-input-func"
     onClick={[Function]}>
     -
   </button>
   <button
+    className="calc-input-func"
     onClick={[Function]}>
     *
   </button>
   <button
+    className="calc-input-func"
     onClick={[Function]}>
     /
   </button>
   <button
+    className="calc-input-func"
     onClick={[Function]}>
     %
   </button>
-  <button>
+  <button
+    className="calc-input-eq">
     =
   </button>
-  <button>
+  <button
+    className="calc-input-clear">
     C
   </button>
 </div>
