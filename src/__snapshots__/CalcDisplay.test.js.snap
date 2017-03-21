@@ -1,0 +1,14 @@
+exports[`test should render the values and func 1`] = `
+<div
+  className="calc-display">
+  <p>
+    5
+  </p>
+  <p>
+    %
+  </p>
+  <p>
+    3
+  </p>
+</div>
+`;
